@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>bela_adormecida</title>
+  <link href="https://fonts.googleapis.com/css?family=Heebo|Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+      html {
+  background-color: red;
+  position: relative;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  font-size: 19px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px; 
+}
+
+#mainNavigation {
+  width: 208px;
+  min-height: 100vh;
+  background: red;
+  position: fixed;
+  color: white;
+  padding: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+  margin-top: 50px;
+}
+
+#siteWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#appWrapper {
+  display: block;
+  width: calc(100% - 208px);
+  flex: 1;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 350px;
+}
+
+#appInnerWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 100vh;
+  background: red;
+  position: relative;
+  align-items: stretch;
+  background: red;
+}
+
+#bodyContent {
+  padding: 1.5rem;
+  flex: 1 0 70%;
+  width: 70%;
+  max-width: 70%;
+  height: 100%;
+  min-height: 100vh;
+  background: red;
+  padding-left: 50px;
+}
+
+.user-name{
+    color: green;
+  font-weight: bold;
+}
+.button {
+text-align: center;
+margin-top: 30px;
+}
+
+.button a {
+  color: red;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#mainNavigation ul {
+  list-style-type: none;
+}
+
+#mainNavigation a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+
+}
+  </style>
+</head>
+
+<body>
+  <div id="siteWrapper">
+    <aside id="mainNavigation">
+      <ul>
+        <li><a href="/">Bela_adormecida</a></li>
+        <li><a href="/chat">CHAT</a></li>
+        <li><a href="/sobre">SOBRE</a></li>
+        <li><a href="/protocolo">PROTOCOLO</a></li>
+      </ul>
+    </aside>
+    <div id="appWrapper">
+            <div id="bodyContent">
+                    <h1>PROTOCOLO</h1>
+                    <div>
+                      <p>Cada convidado tem o quarto reservado para si, das 00h00 às 07h00. Pode ficar o tempo que entender, desde que saia antes das sete da manhã. Se sair, não poderá voltar a entrar. Às 07h00 a Bela Adormecida desperta, ao som do relógio.</p>
+                      <div></div>
+                      <h2>É EXPRESSAMENTE PROIBIDO:</h2>
+                      <ul>
+                        <li>Remover o fato (segunda pele) que cobre o corpo da “Bela Adormecida”; </li>
+                        <li>Utilização de materiais cortantes ou pontiagudos;</li>
+                        <li>Uso de câmaras fotográfica (filmar áudio ou imagem);</li>
+                        <li>Uso de armas ou ferramentas, materiais explosivos ou inflamáveis; </li>
+                        <li>Uso de substâncias químicas ou tóxicas;</li>
+                        <li></li>Qualquer acto que coloque em causa a segurança e integridade física e/ou moral da “Bela Adormecida”
+                      </ul>
+                    </div>
+            </div>
+      <div id="appInnerWrapper">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

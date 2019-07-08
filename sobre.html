@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>bela_adormecida</title>
+  <link href="https://fonts.googleapis.com/css?family=Heebo|Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+      html {
+  background-color: red;
+  position: relative;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  font-size: 19px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px; 
+}
+
+#mainNavigation {
+  width: 208px;
+  min-height: 100vh;
+  background: red;
+  position: fixed;
+  color: white;
+  padding: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+  margin-top: 50px;
+}
+
+#siteWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#appWrapper {
+  display: block;
+  width: calc(100% - 208px);
+  flex: 1;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 350px;
+}
+
+#appInnerWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 100vh;
+  background: red;
+  position: relative;
+  align-items: stretch;
+  background: red;
+}
+
+#bodyContent {
+  padding: 1.5rem;
+  flex: 1 0 70%;
+  width: 70%;
+  max-width: 70%;
+  height: 100%;
+  min-height: 100vh;
+  background: red;
+  padding-left: 50px;
+}
+
+.user-name{
+    color: green;
+  font-weight: bold;
+}
+.button {
+text-align: center;
+margin-top: 30px;
+}
+
+.button a {
+  color: red;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#mainNavigation ul {
+  list-style-type: none;
+}
+
+#mainNavigation a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+
+}
+  </style>
+</head>
+
+<body>
+  <div id="siteWrapper">
+    <aside id="mainNavigation">
+      <ul>
+        <li><a href="/">Bela_adormecida</a></li>
+        <li><a href="/chat">CHAT</a></li>
+        <li><a href="/sobre">SOBRE</a></li>
+        <li><a href="/protocolo">PROTOCOLO</a></li>
+      </ul>
+    </aside>
+    <div id="appWrapper">
+            <div id="bodyContent">
+                    <h1>SOBRE</h1>
+                    <div>
+                      <p>bela_adormecida é um projecto em curso sobre o feminino e a cultura de vigilância vigente (tradicionalmente, fálica). Em Junho de 2018, o espectáculo _bela_adormecida foi apresentado, em formato de palco, no âmbito do FITEI – Festival Internacional de Teatro de Expressão Ibérica, em co-produção com o Rivoli – Teatro Municipal do Porto, com interpretação de Daniel Macedo Pinto, Diana de Sousa, Eloy Monteiro, Miguel Moreira, Paulo Mota e Vânia Rovisco.</p>
+                      <p>Esta versão duracional trata-se de uma instalação performativa composta por dois momentos: o Chat e o Encontro. Os espectadores são convidados a entrar e passar uma noite com uma mulher que se encontra adormecida. Cada “convidado” terá acesso a uma "bela adormecida" através de uma plataforma virtual de “Chat”, onde poderão “conversar" e acertar os detalhes para o Encontro. A marcação do Encontro é feita directamente com a “bela adormecida” por intermédio da plataforma virtual e só por essa via é possível confirmar a participação de cada convidado.</p>
+                      <p>Ficha Técnica e Artística:<br /> Concepção, Direção, Texto e Dramaturgia | Diana de Sousa<br /> Texto | Rui Pina Coelho<br /> Performers | Ágata Pinho, Diana de Sousa, Marisa Bimbo, Mónica Calle, Sofia Dinger e Xana Lagusi<br /> Imagem | Alípio Padilha<br /> Plataforma Virtual | Bruno Monteiro<br /> Produção | ORG.I.A/Self-Mistake</p>
+                      <p><strong>M/18</strong></p>
+                    </div>
+            </div>
+      <div id="appInnerWrapper">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
