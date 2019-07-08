@@ -26,8 +26,8 @@ app.get('/chat', function(req, res) {
     res.sendFile((__dirname + '/chat.html'));
 });
 
-app.get('/chat2', function(req, res) {
-    res.sendFile((__dirname + '/chat2.html'));
+app.get('/chat3', function(req, res) {
+    res.sendFile((__dirname + '/chat3.html'));
 });
 
 
