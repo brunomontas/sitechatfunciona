@@ -255,7 +255,7 @@
         }
 
         #userForm {
-            display: none;
+
         }
         .form-control {
             font-size: 16px;
@@ -282,14 +282,6 @@
                     <div class="chat-box">
                         <div class="chat-entrance-ofline" id="userFormArea">
                             <div class="chat-entrance-main-ofline">
-                                    <div class="story-intro">
-                                            <p>Um pequeno quarto. Vemos algures um relógio despertador de mesa que toca todas as manhãs, sempre às sete. É meia-noite. Uma mulher, com uma peruca de fios de cabelos pretos que lhe caem ligeiramente abaixo do queixo e de lábios pintados de vermelho, dorme numa cama, imóvel. Está pronta para ser visitada.</p>
-                                            <div></div>
-                                          </div>
-                                          <p><span class="user-name">Bela_adormecida: </span>Um destes dias, vou estar sozinha, a dormir, num quarto. Vais ficar comigo da meia-noite às sete da manhã. Podes ficar o tempo que quiseres. Cinco minutos ou a noite toda. Mas, às sete da manhã, quando o relógio tocar, já lá não poderás estar. Para falares comigo entra no chat.</p>
-                                          <h3 class="bela-ofline" id="bela-ofline">Bela_adormecida está offline.</h3>
-                                          <h3 class="bela-online" id="bela-online">Bela_adormecida está online.</h3>
-                                          <h3 class="bela-busy" id="bela-busy">Bela_adormecida está online juntamente com um convidado, espere pela sua vez...</h3>
                             </div>
                             <div class="chat-entrance-form">
                                 <div  class="row">
@@ -344,10 +336,7 @@
         var $userForm = $('#userForm');
         var $users = $('#users');
         var $username = $('#username');
-        var $belaOfline = $('#bela-ofline')
-        var $belaOnline = $('#bela-online')
-        var $belaBusy = $('#bela-busy')
-        var $canReceiveMessages = false;
+
 
         $messageForm.submit(function(e) {
             e.preventDefault();
@@ -362,11 +351,9 @@
         });
 
         $userForm.submit(function(e) {
-            console.log($username.val());
+
             e.preventDefault();
-            if($username.val()=== 'Bela_adormecida'){
-                alert('Não és a Bela_adormecida!!!!!');
-            }else{
+
                 socket.emit('new user', $username.val(), function(data) {
                     if(data) {
                         $userFormArea.hide();
@@ -376,34 +363,9 @@
                 });
                 $username.val('');
                 $canReceiveMessages =true;
-             }
+             
         });
-        socket.on('get users', function(data) {
-            console.log('here 1')
-            for(i = 0; i<data.length;i++){
-                console.log('here 2')
-                if(data[i] === 'Bela_adormecida'){
-                    console.log('here 3')
-                    if(data.length < 2){
-                        console.log('here 4')
-                        $belaOfline.hide();
-                        $belaOnline.show();
-                        $userForm.show()
-                        $belaBusy.hide();
-                    }else{
-                        console.log('here 5')
-                       $belaOfline.hide();
-                       $belaBusy.show();
-                       $userForm.hide();
-                       $belaOnline.hide
- 
-                    }
-                    console.log('here 6')
-                }
-                console.log('here 7')
-            }
 
-        })
         socket.on('get users', function(data) {
             var html = '';
             for(i = 0; i<data.length;i++){
