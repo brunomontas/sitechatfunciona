@@ -270,7 +270,7 @@
     <div id="siteWrapper">
         <aside id="mainNavigation">
           <ul>
-            <li><a href="/">Bela_adormecida</a></li>
+            <li><a href="/">bela_adormecida</a></li>
             <li><a href="/chat">CHAT</a></li>
             <li><a href="/sobre">SOBRE</a></li>
             <li><a href="/protocolo">PROTOCOLO</a></li>
@@ -286,16 +286,17 @@
                                             <p>Um pequeno quarto. Vemos algures um relógio despertador de mesa que toca todas as manhãs, sempre às sete. É meia-noite. Uma mulher, com uma peruca de fios de cabelos pretos que lhe caem ligeiramente abaixo do queixo e de lábios pintados de vermelho, dorme numa cama, imóvel. Está pronta para ser visitada.</p>
                                             <div></div>
                                           </div>
-                                          <p><span class="user-name">Bela_adormecida: </span>Um destes dias, vou estar sozinha, a dormir, num quarto. Vais ficar comigo da meia-noite às sete da manhã. Podes ficar o tempo que quiseres. Cinco minutos ou a noite toda. Mas, às sete da manhã, quando o relógio tocar, já lá não poderás estar. Para falares comigo entra no chat.</p>
-                                          <h3 class="bela-ofline" id="bela-ofline">Bela_adormecida está offline.</h3>
-                                          <h3 class="bela-online" id="bela-online">Bela_adormecida está online.</h3>
-                                          <h3 class="bela-busy" id="bela-busy">Bela_adormecida está online juntamente com um convidado, espere pela sua vez...</h3>
+                                          <p><span class="user-name">bela_adormecida: </span>Um destes dias, vou estar sozinha, a dormir, num quarto. Vais ficar comigo da meia-noite às sete da manhã. Podes ficar o tempo que quiseres. Cinco minutos ou a noite toda. Mas, às sete da manhã, quando o relógio tocar, já lá não poderás estar. Para falares comigo entra no chat.</p>
+                                          <h3 class="bela-ofline" id="bela-ofline">bela_adormecida está offline.</h3>
+                                          <h3 class="bela-online" id="bela-online">bela_adormecida está online.</h3>
+                                          <h3 class="bela-busy" id="bela-busy">bela_adormecida está ocupada (aguarde)</h3>
+                                         
                             </div>
                             <div class="chat-entrance-form">
                                 <div  class="row">
                                             <form id="userForm">
                                                 <div class="form-group">
-                                                    <label>Como te chamas? </label>
+                                                    <label>O teu username:  </label>
                                                     <input class="form-control" id="username" />
                                                     <br />
                                                     <input type="submit" class="btn" value="ENTRAR" />
@@ -364,8 +365,8 @@
         $userForm.submit(function(e) {
             console.log($username.val());
             e.preventDefault();
-            if($username.val()=== 'Bela_adormecida'){
-                alert('Não és a Bela_adormecida!!!!!');
+            if($username.val()=== 'bela_adormecida'){
+                alert('Não és a bela_adormecida!!!!!');
             }else{
                 socket.emit('new user', $username.val(), function(data) {
                     if(data) {
@@ -382,7 +383,7 @@
             console.log('here 1')
             for(i = 0; i<data.length;i++){
                 console.log('here 2')
-                if(data[i] === 'Bela_adormecida'){
+                if(data[i] === 'bela_adormecida'){
                     console.log('here 3')
                     if(data.length < 2){
                         console.log('here 4')
